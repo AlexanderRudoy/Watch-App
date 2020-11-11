@@ -1,0 +1,48 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tabs li {
+    list-style-type: none;
+    padding: 3px;
+    margin: 0 2px 0 2px;
+    background-color: grey;
+    color: white;
+}
+
+.tabs .colon {
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs .colon .dot {
+    background-color: grey;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    animation: transparant 0.5s alternate ease-in-out infinite;
+}
+
+.tabs .colon .dot:first-child {
+    margin-bottom: 3px;
+}
+
+.tabs .colon .dot:last-child {
+    margin-top: 3px;
+}
+
+@keyframes transparant {
+    from {
+        background-color: rgba(128, 128, 128, 1);
+    }
+    to {
+        background-color: rgba(128, 128, 128, 0)
+    }
+}
