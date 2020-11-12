@@ -1,6 +1,20 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('pexels-mario-cuadros-4075993.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-content: center;
+    justify-content: center;
 }
 
 .tabs {
@@ -10,10 +24,17 @@
 }
 
 .tabs li {
+    width: 50px;
+    height: 90px;
     list-style-type: none;
     padding: 3px;
     margin: 0 2px 0 2px;
     background-color: grey;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 80px;
     color: white;
 }
 
@@ -24,18 +45,15 @@
 
 .tabs .colon .dot {
     background-color: grey;
+    opacity: 0.6;
     border-radius: 50%;
-    width: 5px;
-    height: 5px;
+    width: 15px;
+    height: 15px;
     animation: transparant 0.5s alternate ease-in-out infinite;
 }
 
 .tabs .colon .dot:first-child {
-    margin-bottom: 3px;
-}
-
-.tabs .colon .dot:last-child {
-    margin-top: 3px;
+    margin-bottom: 30px;
 }
 
 
